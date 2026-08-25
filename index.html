@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My To-Do List</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="wrap">
+      <h1>My To-Do List</h1>
+
+      <p class="subtitle" id="subtitle">Let's get things done today</p>
+
+      <div class="card">
+        <div class="input-row">
+          <input
+            type="text"
+            id="taskInput"
+            placeholder="Add a task..."
+            maxlength="80"
+          />
+
+          <button id="addBtn" aria-label="Add task">+</button>
+        </div>
+
+        <div class="error-msg" id="errorMsg">Please type a task first.</div>
+
+        <div class="counter">
+          <span class="counter-badge" id="counterBadge"> 0 tasks </span>
+        </div>
+
+        <ul class="task-list" id="taskList"></ul>
+
+        <div class="empty-state" id="emptyState">
+          <p>No tasks yet</p>
+          <span>Add something you'd like to get done.</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
